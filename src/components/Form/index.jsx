@@ -8,7 +8,6 @@ function Form(){
 
     function handleNewTask(){
         const data = {text}
-        console.log(data)
         api.post("/posts", data)
         location.reload() 
     }

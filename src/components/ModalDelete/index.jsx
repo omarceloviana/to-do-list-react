@@ -38,7 +38,6 @@ export default function ModalDelete(id) {
   const [open, setOpen] = React.useState(false);
   
   function deletePost(){
-    console.log(id)
     api.delete(`posts/${id.id}`)
     location.reload()
   }

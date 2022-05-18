@@ -15,15 +15,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TodoItem() {
  
-  const [posts, setPosts] = useState([])
+  const [task, setTask] = useState([])
 
   useEffect( () => {
     api.get('posts')
     .then( (response) => {
-      setPosts(response.data)
+      setTask(response.data)
     })
     .catch( () => {
-      console.log("Deu merda")
+      console.log("Erro")
     })
 
   }, [])
@@ -34,7 +34,7 @@ export default function TodoItem() {
     <Container>
     <Table>
      <TableBody>
-     {posts.map((posts) => {
+     {task.map((posts) => {
        return(
          <TableRow key={posts.id}>
           <TableCell><Checkbox color='primary'/></TableCell>         

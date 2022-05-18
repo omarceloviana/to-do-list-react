@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "text": "Mercado",
+      "id": 1,
+      "title": "TSK"
+    },
+    {
+      "text": "Comprar bolo",
+      "id": 2
+    },
+    {
+      "text": "Farmácia",
+      "id": 3
+    }
+  ]
+}

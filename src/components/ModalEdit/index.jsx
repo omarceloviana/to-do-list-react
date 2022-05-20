@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ModalEdit(id) {
   const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
   const [valueText, setValueText] = useState('')
@@ -78,7 +77,7 @@ export default function ModalEdit(id) {
       text: valueText,
     } 
     api.patch(`posts/${id.id}`, data)
-    location.reload()
+     location.reload()
   }
 
   return (
